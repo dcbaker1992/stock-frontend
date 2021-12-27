@@ -1,0 +1,11 @@
+<div class="main-content">
+    <mat-card role="listitem" *ngFor="let fund of listFunds">
+        <mat-card-title>{{ fund.company }}</mat-card-title>
+        <mat-card-content>
+            {{fund.headquarters}}
+        </mat-card-content>
+        <mat-card-actions>
+            <a class='action-link' [routerLink]="['view', fund.id]">View</a> | <a class='action-link' [routerLink]="['edit', fund.id]">Edit</a> | <a class='action-link' [routerLink]="['delete', fund.id]">Delete</a>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,59 @@
+<form class="funds-form" [formGroup]="addFundForm" (submit)="createFund()">
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Company</mat-label>
+          <input matInput placeholder="Company" formControlName="company">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Open</mat-label>
+          <input matInput placeholder="Open" formControlName="open">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Volume</mat-label>
+          <input matInput placeholder="Volume" formControlName="volume">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Todays Range</mat-label>
+          <input matInput placeholder="Todays Range" formControlName="todaysRange">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Yearly Range</mat-label>
+          <input matInput placeholder="Yearly Range" formControlName="yearlyRange">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Market Cap</mat-label>
+          <input matInput placeholder="Market Cap" formControlName="marketCap">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Sector</mat-label>
+          <input matInput placeholder="Sector" formControlName="sector">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Industry</mat-label>
+          <input matInput placeholder="Industry" formControlName="industry">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Headquarters</mat-label>
+          <input matInput placeholder="Headquarters" formControlName="headquarters">
+        </mat-form-field>
+      </p>
+      <p>
+        <button mat-raised-button color="warn">Submit</button>
+      </p>
+</form>

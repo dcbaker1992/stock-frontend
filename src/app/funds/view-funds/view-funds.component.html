@@ -1,0 +1,11 @@
+<mat-card *ngIf="fundDetails">
+    <mat-card-title>{{ fundDetails.company }}</mat-card-title>
+        <mat-card-content>{{ fundDetails.open}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.volume}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.todaysRange}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.yearlyRange}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.marketCap}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.sector}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.industry}}</mat-card-content>
+        <mat-card-content>{{ fundDetails.headquarters}}</mat-card-content>
+</mat-card>
